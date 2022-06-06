@@ -6,14 +6,15 @@ body{
 }
 
 #product-overview{
-    background: #ff1b68;
+    background: url("freedom.jpg");
     width: 100%;
     height: 528px;
     padding: 10px;
 }
 
 .section-title{
-    color: #2ddf5c
+    color: #2ddf5c;
+    text-align: center;
 }
 
 #product-overview h1{
@@ -21,9 +22,19 @@ body{
     font-family: 'Anton', sans-serif;
 }
 
-h1{
-    font-family: sans-serif;
+.plan{
+    background: #d5ffdc;
+    text-align: center;
+    padding: 16px;
+    margin: 8px;
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
 }
+
+/* h1{
+    font-family: sans-serif;
+} */
 
 .main-header{
     width: 100%;
@@ -33,12 +44,21 @@ h1{
 
 .main-header > div{
     display: inline-block;
+    vertical-align: middle;
+}
+
+.main-header__brand{
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 .main-nav{
     display: inline-block;
     text-align: right;
-    width: calc(100% - 54px);
+    width: calc(100% - 74px);
+    vertical-align: middle;
 }
 
 .main-nav__items{
@@ -49,12 +69,60 @@ h1{
 
 .main-nav__item{
     display: inline-block;
+    margin: 0 16px;
 }
 
+.main-nav__item a{
+    text-decoration: none;
+    color: #0e4f1f;
+    font-weight: bold;
+    padding: 3px 0;
+}
 
+/* .main-nav__item a::after{
+    content: " (Link)";
+    color: red;
+} */
+
+.main-nav__item a:hover,
+.main-nav__item a:active
+{
+    color: white;
+    border-bottom: 5px solid white;
+}
+
+.main-nav__item--cta a {
+    color: white;
+    background: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active
+{
+    color: #ff1b68;
+    background: white;
+    border: none;
+}
 
 span{
     margin: 50px;
     padding: 50px;
     border: 50px;
 }
+
+p::first-letter{
+    color: red;
+    font-size: 20px;
+}
+
+.test2{
+    color: aqua;
+}
+
+.test1{
+    color: purple;
+}
+
+
