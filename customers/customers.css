@@ -72,7 +72,7 @@ main{
     white-space: normal;
   }
 
-  @media (min-width: 40rem){
+  /* @media (min-width: 40rem){
     .testimonial {
       margin: 3rem auto;
       max-width: 1500px;
@@ -87,6 +87,24 @@ main{
     .testimonial__info {
       display: inline-block;
       vertical-align: middle;
+      width: 30%;
+    }
+  } */
+  /* add flex */
+  @media (min-width: 40rem){
+    .testimonial {
+      margin: 3rem auto;
+      max-width: 1500px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .testimonial__image-container{
+      width: 66%;
+    }
+
+    .testimonial__info {
       width: 30%;
     }
   }
