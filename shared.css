@@ -27,6 +27,17 @@ main{
     background: rgba(0,0,0,0.5);
 }
 
+/* before flex */
+/* .main-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #2ddf5c;
+    padding: 0.5rem 1rem;
+    z-index: 1;
+} */
+
 .main-header{
     width: 100%;
     position: fixed;
@@ -35,12 +46,16 @@ main{
     background: #2ddf5c;
     padding: 0.5rem 1rem;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+/* before flex
 .main-header > div{
     display: inline-block;
     vertical-align: middle;
-}
+} */
 
 .toggle-button {
     width: 3rem;
@@ -64,37 +79,53 @@ main{
     margin: 0.6rem 0;
   }
 
-
+  /* before flex */
+/* .main-header__brand{
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    height: 2.5rem;
+    display: inline-block;
+    vertical-align: middle;
+} */
 .main-header__brand{
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
     /* font-size: 1.4rem; */
     height: 2.5rem;
-    display: inline-block;
+}
+
+/* before flex
+.main-header__brand img{
+    height:100%;
+} */
+.main-header__brand img{
+    height: 2.5rem;
     vertical-align: middle;
 }
 
-.main-header__brand img{
-    height:100%;
-  
-}
-
-.main-nav{
+/* before flex */
+/* .main-nav{
     display: inline-block;
     text-align: right;
     width: calc(100% - 122px);
     vertical-align: middle;
-}
+} */
 
 .main-nav__items{
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
 }
 
-.main-nav__item{
+/* before flex */
+/* .main-nav__item{
     display: inline-block;
+    margin: 0 1rem;
+} */
+.main-nav__item{
     margin: 0 1rem;
 }
 
@@ -132,6 +163,23 @@ main{
     color: #ff1b68;
     background: white;
     border: none;
+}
+
+@media (min-width: 40rem){
+    .toggle-button{
+        display: none;
+    }
+
+    /* before flex
+    .main-nav {
+        display: inline-block;
+        text-align: right;
+        width: calc(100% - 44px);
+        vertical-align: middle;
+    } */
+    .main-nav {
+        display: flex;
+    } 
 }
 
 .main-footer{
